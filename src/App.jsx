@@ -52,7 +52,7 @@ function App() {
           />
         </picture>
 
-        <div className="p-6 mx-6 my-24 sm:my-44 border rounded-lg shadow-xl bg-white z-10 max-w-lg">
+        <div className="p-6 mx-6 my-24 border rounded-lg shadow-xl bg-white z-10 max-w-lg">
           <div className="flex gap-4 items-center mb-4">
             <img src={star} className="size-6"></img>
             <h1 className="text-3xl font-bold">FAQs</h1>
@@ -70,7 +70,7 @@ function App() {
                 </div>
                 {/* Answer Section (Hidden/Visible Based on State) */}
                 <p
-                  className={`text-grayish-purple text-sm transition-all duration-300 ease-in-out ${
+                  className={`text-grayish-purple text-sm transition-all duration-500 ease-in-out ${
                     openIndex === index
                       ? "opacity-100 max-h-40"
                       : "opacity-0 max-h-0 overflow-hidden"
