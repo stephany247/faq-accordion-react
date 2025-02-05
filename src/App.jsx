@@ -25,7 +25,7 @@ function App() {
     },
     {
       question:
-        "How can I get help if I'm stuck on a Frontend Mentor challenge?",
+        "How can I get help if I'm stuck on a challenge?",
       answer:
         "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.",
     },
@@ -57,9 +57,9 @@ function App() {
             <img src={star} className="size-6"></img>
             <h1 className="text-3xl font-bold">FAQs</h1>
           </div>
-          <div className="space-y-6">
+          <ul className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="flex flex-col gap-4">
+              <li key={index} className="flex flex-col gap-4">
                 {/* question section */}
                 <div
                   className="flex justify-between gap-4 hover:text-purple active:text-purple"
@@ -78,9 +78,9 @@ function App() {
                 >
                   {faq.answer}
                 </p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </main>
       <footer class="text-center">
